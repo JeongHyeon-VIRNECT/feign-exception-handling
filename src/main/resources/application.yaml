@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    com.example.openfeigntest.feign.*: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 60000
+        readTimeout: 10000
